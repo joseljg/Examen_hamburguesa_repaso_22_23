@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Examen_hamburguesa_repaso_22_23</string>
+    <string name="hamburguesa">hamburguesa</string>
+    <string name="nombre_hamburguesa">Dime el nombre de la hamburguesa</string>
+    <string name="nombre_complemento">Dime el nombre del complemento</string>
+    <string name="siguiente">Siguiente</string>
+</resources>
