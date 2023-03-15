@@ -4,4 +4,13 @@
     <string name="nombre_hamburguesa">Dime el nombre de la hamburguesa</string>
     <string name="nombre_complemento">Dime el nombre del complemento</string>
     <string name="siguiente">Siguiente</string>
+    <string name="pantalla2_titulo1">¿Dispone de código promocional?</string>
+    <string name="codigo">Código</string>
+    <string name="aplicar">Aplicar</string>
+    <string name="producto">producto</string>
+    <string name="precio">precio</string>
+    <string name="complemento">complemento</string>
+    <string name="cupon">cupon</string>
+    <string name="iva">iva</string>
+    <string name="total">total</string>
 </resources>

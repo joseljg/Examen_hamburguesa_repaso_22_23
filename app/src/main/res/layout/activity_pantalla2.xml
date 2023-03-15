@@ -4,6 +4,168 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondon"
     tools:context=".Pantalla2Activity">
+
+
+    <TextView
+        android:id="@+id/txt_pantalla2_titulo1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/pantalla2_titulo1"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_codigo"
+        android:layout_width="235dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints="@string/codigo"
+        android:ems="10"
+        android:hint="@string/codigo"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txt_pantalla2_titulo1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pantalla2_titulo1" />
+
+    <Button
+        android:id="@+id/bt_aplicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aplicar"
+        android:onClick="aplicar_cupon"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edt_codigo"
+        app:layout_constraintEnd_toEndOf="@+id/txt_pantalla2_titulo1" />
+
+    <TextView
+        android:id="@+id/txt_p2_hamburguesa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/hamburguesa"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/edt_codigo"
+        app:layout_constraintTop_toBottomOf="@+id/edt_codigo" />
+
+    <TextView
+        android:id="@+id/txt_p2_precio_hamburguesa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/precio"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_p2_hamburguesa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toEndOf="@+id/txt_p2_hamburguesa" />
+
+    <TextView
+        android:id="@+id/txt_p2_complemento"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/complemento"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txt_p2_hamburguesa"
+        app:layout_constraintTop_toBottomOf="@+id/txt_p2_hamburguesa"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/txt_p2_cupon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/cupon"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txt_p2_complemento"
+        app:layout_constraintTop_toBottomOf="@+id/txt_p2_complemento" />
+
+    <TextView
+        android:id="@+id/txt_p2_precio_cupon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/precio"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_p2_cupon"
+        app:layout_constraintStart_toEndOf="@+id/txt_p2_cupon" />
+
+    <TextView
+        android:id="@+id/txt_p2_iva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="@string/iva"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txt_p2_cupon"
+        app:layout_constraintTop_toBottomOf="@+id/txt_p2_cupon" />
+
+    <TextView
+        android:id="@+id/txt_p2_precio_iva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/precio"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_p2_iva"
+        app:layout_constraintEnd_toEndOf="@+id/txt_p2_precio_cupon" />
+
+    <TextView
+        android:id="@+id/txt_p2_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="@string/total"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txt_p2_iva"
+        app:layout_constraintTop_toBottomOf="@+id/txt_p2_iva" />
+
+    <TextView
+        android:id="@+id/txt_p2_precio_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/precio"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_p2_total"
+        app:layout_constraintStart_toEndOf="@+id/txt_p2_total"
+        app:layout_constraintTop_toTopOf="@+id/txt_p2_total"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_p2_precio_complemento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/precio"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_p2_complemento"
+        app:layout_constraintStart_toEndOf="@+id/txt_p2_complemento"
+        app:layout_constraintTop_toTopOf="@+id/txt_p2_complemento"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
